@@ -20,8 +20,7 @@ def main():
         print(f'Количество слов в файле - {len(count_strings)}')
 
     with open('file.txt', 'r', encoding='utf-8') as file:
-        read_file = file.read()
-        read_file = read_file.replace('.', '!')
+        read_file = file.read().replace('.', '!')
         with open ('regerat2.txt', 'w', encoding='utf-8') as file_write:
             file_write.write(read_file)
 
